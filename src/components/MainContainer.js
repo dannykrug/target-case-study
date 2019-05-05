@@ -10,6 +10,7 @@ export default class MainContainer extends Component {
     return (
       <div>
         {this.state.CatalogEntryView[0].department}
+        <img src={this.state.CatalogEntryView[0].Images[0].PrimaryImage[0].image} alt="blender" />
       </div>
     )
   }
