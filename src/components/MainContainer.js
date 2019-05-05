@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+import ItemData from '../ItemData'
 
 export default class MainContainer extends Component {
+
+  state=ItemData
+
   render() {
-    return "Hello April"
+    console.log(this.state);
+    return (
+      <div>
+        {this.state.CatalogEntryView[0].department}
+      </div>
+    )
   }
 }
