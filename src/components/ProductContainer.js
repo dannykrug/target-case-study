@@ -6,9 +6,7 @@ export default class ProductContainer extends Component {
   render() {
 
     let product=this.props.product
-
-    console.log(product.Offers[0].OfferPrice[0].formattedPriceValue);
-
+    
     return (
       <div>
       <h1>{product.title}</h1>
