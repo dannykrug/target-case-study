@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import ItemData from '../ItemData'
+import ProductContainer from './ProductContainer'
 
 export default class MainContainer extends Component {
 
-  state=ItemData
+  state=ItemData.CatalogEntryView[0]
 
   render() {
     console.log(this.state);
     return (
       <div>
-        {this.state.CatalogEntryView[0].department}
-        <img src={this.state.CatalogEntryView[0].Images[0].PrimaryImage[0].image} alt="blender" />
+        <ProductContainer product={this.state}/>
       </div>
     )
   }
