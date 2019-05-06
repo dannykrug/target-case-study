@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import HighlightsContainer from './HighlightsContainer'
 import PromotionContainer from './PromotionContainer'
+import PhotoCarousel from './PhotoCarousel'
 
 export default class ProductContainer extends Component {
   render() {
 
     let product=this.props.product
-    
+
     return (
       <div>
       <h1>{product.title}</h1>
+      <PhotoCarousel items={product.Images[0]}/>
       <h2>{product.Offers[0].OfferPrice[0].formattedPriceValue}</h2>
       <p>{product.Offers[0].OfferPrice[0].priceQualifier}</p>
       <PromotionContainer promotions={product.Promotions} />
