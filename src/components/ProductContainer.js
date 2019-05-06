@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import HighlightsContainer from './HighlightsContainer'
 
 export default class ProductContainer extends Component {
   render() {
@@ -15,6 +16,7 @@ export default class ProductContainer extends Component {
       <h3>returns</h3>
       <p>This item must be returned within {product.ReturnPolicy[0].ReturnPolicyDetails[0].policyDays} days. {product.ReturnPolicy[0].ReturnPolicyDetails[0].guestMessage}.</p>
       <h1>product highlights</h1>
+      <HighlightsContainer highlights={product.ItemDescription[0].features}/>
       </div>
     )
   }
