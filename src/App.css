@@ -1,12 +1,12 @@
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: top;
   height: 90%;
 }
 
-.split {
+/* .split {
   height: 100%;
   width: 45%;
   position: fixed;
@@ -16,20 +16,21 @@
   padding-top: 50px;
   padding-bottom: 30px;
   padding-left: 7%;
-}
+} */
 
 /* Control the left side */
 .left {
-  left: 0;
-  background-color: white;
-  overflow: auto;
-  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 5%;
 }
 
 /* Control the right side */
 .right {
-  right: 0;
-  background-color: white
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
 .title {
@@ -41,5 +42,5 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 6%;
+  height: 4%;
 }

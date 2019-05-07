@@ -13,8 +13,8 @@ export default class ProductContainer extends Component {
     let product=this.props.product
 
     return (
-      <div>
-        <div className="split left main">
+      <div className="main">
+        <div className="split left">
           <h1 className="title">{product.title}</h1>
           <div className="photo-carousel">
           <PhotoCarousel items={product.Images[0]}/>
