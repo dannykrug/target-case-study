@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import HighlightsContainer from './HighlightsContainer'
 import PromotionContainer from './PromotionContainer'
 import PhotoCarousel from './PhotoCarousel'
+import ReviewContainer from './ReviewContainer'
 
 export default class ProductContainer extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class ProductContainer extends Component {
       <div>
       <h1>{product.title}</h1>
       <PhotoCarousel items={product.Images[0]}/>
+      <ReviewContainer reviews={product.CustomerReview[0]} />
       <h2>{product.Offers[0].OfferPrice[0].formattedPriceValue}</h2>
       <p>{product.Offers[0].OfferPrice[0].priceQualifier}</p>
       <PromotionContainer promotions={product.Promotions} />
