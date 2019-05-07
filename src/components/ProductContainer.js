@@ -5,7 +5,6 @@ import PhotoCarousel from './PhotoCarousel'
 import ReviewContainer from './ReviewContainer'
 import QuantityCounter from './QuantityCounter'
 import Button from './Button'
-import ListShareButton from './ListShareButton'
 import '../App.css'
 
 export default class ProductContainer extends Component {
@@ -31,9 +30,11 @@ export default class ProductContainer extends Component {
           <Button id="atc" name="Add to Cart" />
           <h3>returns</h3>
           <p>This item must be returned within {product.ReturnPolicy[0].ReturnPolicyDetails[0].policyDays} days. {product.ReturnPolicy[0].ReturnPolicyDetails[0].guestMessage}.</p>
-          <ListShareButton name="ADD TO REGISTRY" />
-          <ListShareButton name="ADD TO LIST" />
-          <ListShareButton name="SHARE" />
+          <div className="add-share-box">
+            <Button className="add-share" id="registry" name="ADD TO REGISTRY" />
+            <Button className="add-share" id="list"  name="ADD TO LIST" />
+            <Button className="add-share" id="share" name="SHARE" />
+          </div>
           <h1>product highlights</h1>
           <HighlightsContainer highlights={product.ItemDescription[0].features}/>
           </div>

@@ -37,7 +37,9 @@
   width: 85%;
 }
 
-/* .photo-carousel {
+.add-share-box {
   display: flex;
-  justify-content: center;
-} */
+  flex-direction: row;
+  justify-content: space-around;
+  height: 6%;
+}

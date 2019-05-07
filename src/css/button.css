@@ -15,3 +15,14 @@
   text-align: center;
   color: white;
 }
+
+.add-share {
+  color: white;
+  background: lightGrey;
+  width: 30%;
+  height: 80%;
+  font-size: 75%;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 2px;
+}
