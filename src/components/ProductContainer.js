@@ -15,12 +15,12 @@ export default class ProductContainer extends Component {
 
     return (
       <div>
-        <div class="split left">
+        <div className="split left">
           <h1>{product.title}</h1>
           <PhotoCarousel items={product.Images[0]}/>
           <ReviewContainer reviews={product.CustomerReview[0]} />
         </div>
-        <div class="split right">
+        <div className="split right">
           <h2>{product.Offers[0].OfferPrice[0].formattedPriceValue}</h2>
           <p>{product.Offers[0].OfferPrice[0].priceQualifier}</p>
           <PromotionContainer promotions={product.Promotions} />
