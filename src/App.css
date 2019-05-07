@@ -1,3 +1,11 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 90%;
+}
+
 .split {
   height: 100%;
   width: 45%;
@@ -5,7 +13,8 @@
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 30px;
   padding-left: 7%;
 }
 
@@ -13,6 +22,8 @@
 .left {
   left: 0;
   background-color: white;
+  overflow: auto;
+  padding-bottom: 10px;
 }
 
 /* Control the right side */
@@ -20,3 +31,13 @@
   right: 0;
   background-color: white
 }
+
+.title {
+  text-align: center;
+  width: 85%;
+}
+
+/* .photo-carousel {
+  display: flex;
+  justify-content: center;
+} */

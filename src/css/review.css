@@ -1,0 +1,41 @@
+.review-box {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 20%;
+}
+
+.review-topper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.pro-con-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: lightGrey;
+}
+
+.pro-con-topper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.pro-con-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.pro-con-item {
+
+}
+
+.review-divider {
+  height: 1px;
+  width: 85%;
+  background: black;
+}

@@ -19,7 +19,12 @@ export default class PhotoCarousel extends Component {
     getImages(imageArray)
 
     return (
-      <ImageGallery items={images} />
+      <div style={{width: '75%'}}>
+      <ImageGallery
+      items={images}
+      showPlayButton={false}
+      />
+      </div>
     )
   }
 }

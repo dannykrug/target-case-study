@@ -1,0 +1,17 @@
+#atc {
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+}
+
+#pickup {
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+}

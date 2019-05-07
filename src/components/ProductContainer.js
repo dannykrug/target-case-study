@@ -15,9 +15,11 @@ export default class ProductContainer extends Component {
 
     return (
       <div>
-        <div className="split left">
-          <h1>{product.title}</h1>
+        <div className="split left main">
+          <h1 className="title">{product.title}</h1>
+          <div className="photo-carousel">
           <PhotoCarousel items={product.Images[0]}/>
+          </div>
           <ReviewContainer reviews={product.CustomerReview[0]} />
         </div>
         <div className="split right">
