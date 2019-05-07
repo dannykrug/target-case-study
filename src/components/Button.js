@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 export default class Button extends Component {
   render() {
     return (
-      <div>
+      <span id={this.props.id}>
         {this.props.name}
-      </div>
+      </span>
     )
   }
 }

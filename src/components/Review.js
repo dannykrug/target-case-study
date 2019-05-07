@@ -6,7 +6,7 @@ export default class Review extends Component {
     let review = this.props.review
     return(
       <div>
-      <p><StarRating value={review.overallRating}/></p>
+      <p><StarRating name={review.overallRating} value={review.overallRating}/></p>
       <h3>{review.title}</h3>
       <p>{review.review}</p>
       <p>{review.screenName} {review.datePosted}</p>

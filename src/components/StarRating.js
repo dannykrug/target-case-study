@@ -5,6 +5,7 @@ const StarRating = (props) => {
   return (
     <div>
       <StarRatingComponent
+        name={props.name}
         editing={false}
         starCount={5}
         value={props.value}

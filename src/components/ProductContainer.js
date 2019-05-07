@@ -25,8 +25,8 @@ export default class ProductContainer extends Component {
           <p>{product.Offers[0].OfferPrice[0].priceQualifier}</p>
           <PromotionContainer promotions={product.Promotions} />
           <QuantityCounter />
-          <Button name="Pickup In Store" />
-          <Button name="Add to Cart" />
+          <Button id="pickup" name="Pickup In Store" />
+          <Button id="atc" name="Add to Cart" />
           <h3>returns</h3>
           <p>This item must be returned within {product.ReturnPolicy[0].ReturnPolicyDetails[0].policyDays} days. {product.ReturnPolicy[0].ReturnPolicyDetails[0].guestMessage}.</p>
           <ListShareButton name="ADD TO REGISTRY" />
