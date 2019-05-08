@@ -8,3 +8,12 @@
 .promo-text {
   color: #E80018;
 }
+
+@media only screen and (max-width: 768px) {
+  .promo-divider {
+    height: 1px;
+    width: 100%;
+    background: black;
+    margin: 3% 0%;
+  }
+}

@@ -23,6 +23,7 @@ export default class PhotoCarousel extends Component {
       showPlayButton={false}
       useTranslate3D={false}
       disableSwipe={true}
+      showFullscreenButton={false}
       />
       </div>
     )

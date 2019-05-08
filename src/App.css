@@ -114,7 +114,8 @@
   .right {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 
   .title {
@@ -179,5 +180,11 @@
 
   .return-text {
     font-size: 12px;
+    width: 75%;
+  }
+
+  .review-container {
+    display: flex;
+    align-items: flex-end;
   }
 }
