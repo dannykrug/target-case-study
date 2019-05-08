@@ -3,7 +3,6 @@ import StarRating from './StarRating'
 
 export default class Review extends Component {
   render() {
-    console.log(this.props);
     let review = this.props.review
     return(
       <div className={this.props.className}>

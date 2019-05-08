@@ -5,6 +5,7 @@ import PhotoCarousel from './PhotoCarousel'
 import ReviewContainer from './ReviewContainer'
 import QuantityCounter from './QuantityCounter'
 import Button from './Button'
+import ATCContainer from './ATCContainer'
 import '../App.css'
 
 export default class ProductContainer extends Component {
@@ -45,10 +46,9 @@ export default class ProductContainer extends Component {
         <div className="quantity-box">
           <QuantityCounter />
         </div>
-        <div className="atc-box">
-          <Button purchasingChannelCode={product.purchasingChannelCode} className="button pickup" id="pickup" name="PICK UP IN STORE" />
-          <Button purchasingChannelCode={product.purchasingChannelCode} className="button atc" id="atc" name="ADD TO CART" />
-        </div>
+
+          <ATCContainer code={product.purchasingChannelCode}  />
+
         <div className="return-box">
           <h3>returns</h3>
           <div className="return-divider" />

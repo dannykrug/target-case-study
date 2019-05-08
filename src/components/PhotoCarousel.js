@@ -8,8 +8,6 @@ export default class PhotoCarousel extends Component {
     let imageArray = this.props.items.AlternateImages
     let images = []
 
-    console.log(images);
-
     let getImages = (array) => {
       for(let i=0; i < array.length; i++) {
         images.push({original: array[i].image, thumbnail: array[i].image})
