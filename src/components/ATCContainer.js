@@ -6,19 +6,6 @@ export default class ATCContainer extends Component {
 
   render() {
 
-    let code = this.props.code
-
-    // function buttonRender(code)  {
-    //   let atc = document.getElementById('atc')
-    //   let pickup = document.getElementById('pickup')
-    //   if(code === 1) {
-    //     pickup.className = "hidden"
-    //   } else if(code === 2) {
-    //     atc.className = "hidden"
-    //   }
-    // }
-
-    // buttonRender(code)
 
     console.log(this.props.code);
     return(

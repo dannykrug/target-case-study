@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StarRating from './StarRating'
+import '../css/review.css'
 
 export default class Review extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class Review extends Component {
       <p><StarRating name={review.overallRating} value={review.overallRating}/></p>
       <h3>{review.title}</h3>
       <p>{review.review}</p>
-      <p>{review.screenName} {review.datePosted}</p>
+      <p><span class="reviewer-name">{review.screenName}</span> {review.datePosted}</p>
       </div>
     )
   }

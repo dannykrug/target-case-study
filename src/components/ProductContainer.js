@@ -5,15 +5,26 @@ import PhotoCarousel from './PhotoCarousel'
 import ReviewContainer from './ReviewContainer'
 import QuantityCounter from './QuantityCounter'
 import Button from './Button'
-import ATCContainer from './ATCContainer'
 import '../App.css'
 
 export default class ProductContainer extends Component {
 
+  // componentWillMount(){
+  //   let code = this.props.product.purchasingChannelCode
+  //   if(code === "1") {
+  //       this.setState({
+  //         pickup: "hidden"
+  //       })
+  //     } else if(code === "2") {
+  //       this.setState({
+  //         atc: "hidden"
+  //       })
+  //     }
+  // }
+
   render() {
-
-    let product = this.props.product
-
+    let product = this.props.product.product
+    let buttonStyle = this.props.product
     // const renderButton = () => {
     //   let atc = document.getElementById('atc')
     //   let pickup = document.getElementById('pickup')
@@ -27,6 +38,22 @@ export default class ProductContainer extends Component {
     // }
     //
     // renderButton()
+
+    // let buttonRender = (code) => {
+    //   if(code === 1) {
+    //     this.setState({
+    //       pickup: "hidden"
+    //     })
+    //   } else if(code === 2) {
+    //     this.setState({
+    //       atc: "hidden"
+    //     })
+    //   }
+    // }
+    //
+    // buttonRender(code)
+
+    console.log(this.props.product.atc);
 
     return (
       <div className="main">
@@ -47,7 +74,10 @@ export default class ProductContainer extends Component {
           <QuantityCounter />
         </div>
 
-          <ATCContainer code={product.purchasingChannelCode}  />
+        <div className="atc-box" id="buttonContainer">
+          <Button code={product.purchasingChannelCode} className={buttonStyle.pickup} id="pickup" name="PICK UP IN STORE" />
+          <Button code={product.purchasingChannelCode} className={buttonStyle.atc} id="atc" name="ADD TO CART" />
+        </div>
 
         <div className="return-box">
           <h3>returns</h3>
