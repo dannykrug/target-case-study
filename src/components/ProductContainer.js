@@ -9,49 +9,10 @@ import '../App.css'
 
 export default class ProductContainer extends Component {
 
-  // componentWillMount(){
-  //   let code = this.props.product.purchasingChannelCode
-  //   if(code === "1") {
-  //       this.setState({
-  //         pickup: "hidden"
-  //       })
-  //     } else if(code === "2") {
-  //       this.setState({
-  //         atc: "hidden"
-  //       })
-  //     }
-  // }
 
   render() {
     let product = this.props.product.product
     let buttonStyle = this.props.product
-    // const renderButton = () => {
-    //   let atc = document.getElementById('atc')
-    //   let pickup = document.getElementById('pickup')
-    //   if(product.purchasingChannelCode === 1) {
-    //     pickup.className = "hidden"
-    //     atc.className = "button atc"
-    //   } else if(product.purchasingChannelCode === 2) {
-    //     atc.className = "hidden"
-    //     pickup.className = "button pickup"
-    //   }
-    // }
-    //
-    // renderButton()
-
-    // let buttonRender = (code) => {
-    //   if(code === 1) {
-    //     this.setState({
-    //       pickup: "hidden"
-    //     })
-    //   } else if(code === 2) {
-    //     this.setState({
-    //       atc: "hidden"
-    //     })
-    //   }
-    // }
-    //
-    // buttonRender(code)
 
     console.log(this.props.product.atc);
 
