@@ -9,7 +9,7 @@ const StarRating = (props) => {
         editing={false}
         starCount={5}
         value={props.value}
-        starColor={"red"}
+        starColor={"#E80018"}
         emptyStarColor={"grey"}
        />
     </div>

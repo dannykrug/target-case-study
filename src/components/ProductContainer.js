@@ -8,20 +8,35 @@ import Button from './Button'
 import '../App.css'
 
 export default class ProductContainer extends Component {
+
   render() {
 
-    let product=this.props.product
+    let product = this.props.product
+
+    const renderButton = () => {
+      let atc = document.getElementById('atc')
+      let pickup = document.getElementById('pickup')
+      if(product.purchasingChannelCode === 1) {
+        pickup.className = "hidden"
+        atc.className = "button atc"
+      } else if(product.purchasingChannelCode === 2) {
+        atc.className = "hidden"
+        pickup.className = "button pickup"
+      }
+    }
+
+    renderButton()
 
     return (
       <div className="main">
-        <div className="split left">
+        <div className="left">
           <h1 className="title">{product.title}</h1>
           <div className="photo-carousel">
           <PhotoCarousel items={product.Images[0]}/>
           </div>
           <ReviewContainer reviews={product.CustomerReview[0]} />
         </div>
-        <div className="split right">
+        <div className="right">
         <div className="price-box">
           <span className="price">{product.Offers[0].OfferPrice[0].formattedPriceValue}</span>
           <span className="qualifier">{product.Offers[0].OfferPrice[0].priceQualifier}</span>
@@ -31,8 +46,8 @@ export default class ProductContainer extends Component {
           <QuantityCounter />
         </div>
         <div className="atc-box">
-          <Button className="button pickup" id="pickup" name="PICK UP IN STORE" />
-          <Button className="button atc" id="atc" name="ADD TO CART" />
+          <Button purchasingChannelCode={product.purchasingChannelCode} className="button pickup" id="pickup" name="PICK UP IN STORE" />
+          <Button purchasingChannelCode={product.purchasingChannelCode} className="button atc" id="atc" name="ADD TO CART" />
         </div>
         <div className="return-box">
           <h3>returns</h3>

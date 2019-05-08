@@ -32,7 +32,6 @@ export default class QuantityCounter extends Component {
       }
     }
 
-    console.log(this.state);
     return (
       <div className="quantity">
         <span className="quantity-text">quantity:</span> <span className="quantity-adjust"><span className="quantity-button" onClick={lowerQuantity} id="minus"><FontAwesomeIcon icon="minus-circle" /></span>
