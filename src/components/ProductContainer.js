@@ -34,8 +34,11 @@ export default class ProductContainer extends Component {
           <Button className="button pickup" id="pickup" name="PICK UP IN STORE" />
           <Button className="button atc" id="atc" name="ADD TO CART" />
         </div>
+        <div className="return-box">
           <h3>returns</h3>
-          <p>This item must be returned within {product.ReturnPolicy[0].ReturnPolicyDetails[0].policyDays} days. {product.ReturnPolicy[0].ReturnPolicyDetails[0].guestMessage}.</p>
+          <div className="return-divider" />
+          <p className="return-text">This item must be returned within {product.ReturnPolicy[0].ReturnPolicyDetails[0].policyDays} days. {product.ReturnPolicy[0].ReturnPolicyDetails[0].guestMessage}.</p>
+        </div>
           <div className="add-share-box">
             <Button className="add-share" id="registry" name="ADD TO REGISTRY" />
             <Button className="add-share" id="list"  name="ADD TO LIST" />

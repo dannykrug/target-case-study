@@ -80,6 +80,23 @@
   font-weight: lighter;
 }
 
+.return-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.return-divider {
+  height: 50%;
+  width: 1px;
+  background: black;
+}
+
+.return-text {
+  font-size: 12px;
+}
+
 .image-gallery-slide {
   max-width: 600px;
 }
