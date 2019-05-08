@@ -28,6 +28,10 @@
   padding-bottom: 2%;
 }
 
+.quantity-button:hover {
+  cursor: pointer;
+}
+
 .quantity-number {
   font-size: 100%;
   font-weight: bold;
