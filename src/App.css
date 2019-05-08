@@ -53,6 +53,15 @@
   height: 6%;
 }
 
+.quantity-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 6%;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
 .image-gallery-slide {
   max-width: 600px;
 }

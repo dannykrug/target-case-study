@@ -1,0 +1,34 @@
+.quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50%;
+  width: 75%;
+  border: 1px solid black;
+}
+
+.quantity-text {
+  width: 30%;
+  margin-left: 5%;
+}
+
+.quantity-adjust {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.quantity-button {
+  background: lightGrey;
+  height: 100%;
+  width: 17%;
+  border-radius: 50%;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.quantity-number {
+  font-size: 100%;
+  font-weight: bold;
+}

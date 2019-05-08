@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/quantity.css'
 
 export default class QuantityCounter extends Component {
 
@@ -28,8 +29,9 @@ export default class QuantityCounter extends Component {
 
     console.log(this.state);
     return (
-      <div>
-        Quantity <span onClick={lowerQuantity} id="minus">-</span> {this.state.count} <span onClick={addQuantity} id="plus">+</span>
+      <div className="quantity">
+        <span className="quantity-text">quantity:</span> <span className="quantity-adjust"><span className="quantity-button" onClick={lowerQuantity} id="minus">-</span>
+        <span className="quantity-number">{this.state.count}</span> <span className="quantity-button" onClick={addQuantity} id="plus">+</span></span>
       </div>
     )
   }

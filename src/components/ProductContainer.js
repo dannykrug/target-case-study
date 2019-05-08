@@ -25,7 +25,9 @@ export default class ProductContainer extends Component {
           <h2>{product.Offers[0].OfferPrice[0].formattedPriceValue}</h2>
           <p>{product.Offers[0].OfferPrice[0].priceQualifier}</p>
           <PromotionContainer promotions={product.Promotions} />
+        <div className="quantity-box">
           <QuantityCounter />
+        </div>
         <div className="atc-box">
           <Button className="button pickup" id="pickup" name="PICK UP IN STORE" />
           <Button className="button atc" id="atc" name="ADD TO CART" />
