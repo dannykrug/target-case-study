@@ -11,7 +11,8 @@ export default class ReviewContainer extends Component {
     return (
       <div className="review-box">
         <div className="review-topper">
-          <StarRating name={reviews.consolidatedOverallRating} value={reviews.consolidatedOverallRating}/> <span>overall</span> <span><p>view all {reviews.totalReviews} reviews</p></span>
+          <div className="overall-rating"><StarRating name={reviews.consolidatedOverallRating} value={reviews.consolidatedOverallRating}/> <span>overall</span></div>
+          <span className="view-all">view all {reviews.totalReviews} reviews</span>
         </div>
         <div className="pro-con-box">
           <div className="pro-con-topper">
