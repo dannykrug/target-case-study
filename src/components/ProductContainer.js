@@ -14,19 +14,19 @@ export default class ProductContainer extends Component {
 
     let product = this.props.product
 
-    const renderButton = () => {
-      let atc = document.getElementById('atc')
-      let pickup = document.getElementById('pickup')
-      if(product.purchasingChannelCode === 1) {
-        pickup.className = "hidden"
-        atc.className = "button atc"
-      } else if(product.purchasingChannelCode === 2) {
-        atc.className = "hidden"
-        pickup.className = "button pickup"
-      }
-    }
-
-    renderButton()
+    // const renderButton = () => {
+    //   let atc = document.getElementById('atc')
+    //   let pickup = document.getElementById('pickup')
+    //   if(product.purchasingChannelCode === 1) {
+    //     pickup.className = "hidden"
+    //     atc.className = "button atc"
+    //   } else if(product.purchasingChannelCode === 2) {
+    //     atc.className = "hidden"
+    //     pickup.className = "button pickup"
+    //   }
+    // }
+    //
+    // renderButton()
 
     return (
       <div className="main">

@@ -15,11 +15,11 @@
   cursor: pointer;
 }
 
-.atc {
+#atc {
   background-color: #E80018;
 }
 
-.pickup {
+#pickup {
   background-color: black;
 }
 
@@ -35,5 +35,5 @@
 }
 
 .hidden {
-  display: hidden;
+  display: none;
 }

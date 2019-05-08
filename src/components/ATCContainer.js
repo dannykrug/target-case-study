@@ -5,11 +5,26 @@ import '../css/button.css'
 export default class ATCContainer extends Component {
 
   render() {
-    console.log(this.props);
+
+    let code = this.props.code
+
+    // function buttonRender(code)  {
+    //   let atc = document.getElementById('atc')
+    //   let pickup = document.getElementById('pickup')
+    //   if(code === 1) {
+    //     pickup.className = "hidden"
+    //   } else if(code === 2) {
+    //     atc.className = "hidden"
+    //   }
+    // }
+
+    // buttonRender(code)
+
+    console.log(this.props.code);
     return(
-      <div className="atc-box">
-        <Button className="button pickup" id="pickup" name="PICK UP IN STORE" />
-        <Button className="button atc" id="atc" name="ADD TO CART" />
+      <div className="atc-box" id="buttonContainer">
+        <Button className="button" id="pickup" name="PICK UP IN STORE" />
+        <Button className="button" id="atc" name="ADD TO CART" />
       </div>
     )
   }
