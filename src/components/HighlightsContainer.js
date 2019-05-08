@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Highlight from './Highlight'
 import '../css/highlights.css'
 
-export default class HighlightsContainer extends Component {
-  render(){
-    let highlights = this.props.highlights.map(highlight => <li><Highlight highlight={highlight} /></li>)
+const HighlightsContainer = (props) => {
+
+    let highlights = props.highlights.map(highlight => <li><Highlight highlight={highlight} /></li>)
 
     return (
       <div>
@@ -14,4 +14,5 @@ export default class HighlightsContainer extends Component {
       </div>
     )
   }
-}
+
+export default HighlightsContainer

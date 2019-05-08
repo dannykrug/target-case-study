@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Promotion from './Promotion'
 import '../css/promo.css'
 
-export default class PromotionContainer extends Component {
-  render(){
+ const PromotionContainer = (props) => {
 
-    let promotions = this.props.promotions.map(promotion => <Promotion promotion={promotion} />)
+    let promotions = props.promotions.map(promotion => <Promotion promotion={promotion} />)
 
     return (
       <div>
@@ -15,4 +14,6 @@ export default class PromotionContainer extends Component {
       </div>
     )
   }
-}
+
+
+export default PromotionContainer

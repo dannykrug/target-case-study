@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Review from './Review';
 import StarRating from './StarRating';
 import '../css/review.css'
 
-export default class ReviewContainer extends Component {
-  render() {
+const ReviewContainer = (props) => {
 
-    let reviews = this.props.reviews
+    let reviews = props.reviews
 
     return (
       <div className="review-box">
@@ -27,4 +26,5 @@ export default class ReviewContainer extends Component {
       </div>
     )
   }
-}
+
+export default ReviewContainer

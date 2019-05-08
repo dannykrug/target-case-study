@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Highlight extends Component {
-  render(){
+const Highlight = (props) => {
     return (
       <div>
-      {this.props.highlight}
+      {props.highlight}
       </div>
     )
   }
-}
+
+export default Highlight

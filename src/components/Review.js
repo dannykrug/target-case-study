@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import StarRating from './StarRating'
 import Moment from 'react-moment';
 import '../css/review.css'
 
-export default class Review extends Component {
-  render() {
-    let review = this.props.review
+ const Review = (props) => {
+    let review = props.review
     return(
-      <div className={this.props.className}>
+      <div className={props.className}>
       <p><StarRating name={review.overallRating} value={review.overallRating}/></p>
       <h3>{review.title}</h3>
       <p>{review.review}</p>
@@ -15,4 +14,5 @@ export default class Review extends Component {
       </div>
     )
   }
-}
+
+export default Review
