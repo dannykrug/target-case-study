@@ -17,8 +17,7 @@ export default class ReviewContainer extends Component {
           <div className="pro-con-topper">
             <span><h2>PRO</h2><p>most helpful 4-5 star review</p></span> <span><h2>CON</h2><p>most helpful 1-2 star review</p></span>
           </div>
-          <div className="review-divider">
-          </div>
+          <div className="review-divider" />
           <div className="pro-con-content">
             <Review className="pro-con-item" review={reviews.Pro[0]} />
             <Review className="pro-con-item" review={reviews.Con[0]} />

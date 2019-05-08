@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   height: 50%;
-  width: 75%;
+  width: 50%;
   border: 1px solid black;
 }
 
@@ -17,19 +17,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  margin-left: 30%;
 }
 
 .quantity-button {
-  background: lightGrey;
-  height: 100%;
-  width: 17%;
-  border-radius: 50%;
-  text-align: center;
-  padding-bottom: 2%;
+  font-size: 25px;
+  color: lightGrey;
 }
 
 .quantity-button:hover {
   cursor: pointer;
+  color: red;
 }
 
 .quantity-number {

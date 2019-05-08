@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons'
 import '../css/quantity.css'
+
+library.add(faPlusCircle, faMinusCircle)
 
 export default class QuantityCounter extends Component {
 
@@ -30,8 +35,8 @@ export default class QuantityCounter extends Component {
     console.log(this.state);
     return (
       <div className="quantity">
-        <span className="quantity-text">quantity:</span> <span className="quantity-adjust"><span className="quantity-button" onClick={lowerQuantity} id="minus">-</span>
-        <span className="quantity-number">{this.state.count}</span> <span className="quantity-button" onClick={addQuantity} id="plus">+</span></span>
+        <span className="quantity-text">quantity:</span> <span className="quantity-adjust"><span className="quantity-button" onClick={lowerQuantity} id="minus"><FontAwesomeIcon icon="minus-circle" /></span>
+        <span className="quantity-number">{this.state.count}</span> <span className="quantity-button" onClick={addQuantity} id="plus"><FontAwesomeIcon icon="plus-circle" /></span></span>
       </div>
     )
   }

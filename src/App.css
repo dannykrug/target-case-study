@@ -59,7 +59,25 @@
   align-items: center;
   height: 6%;
   margin-left: 3%;
-  margin-top: 2%;
+}
+
+.price-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  height: 6%;
+  width: 40%;
+  margin-top: 5%;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.qualifier {
+  font-size: 10px;
+  font-weight: lighter;
 }
 
 .image-gallery-slide {

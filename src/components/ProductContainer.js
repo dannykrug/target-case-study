@@ -22,8 +22,10 @@ export default class ProductContainer extends Component {
           <ReviewContainer reviews={product.CustomerReview[0]} />
         </div>
         <div className="split right">
-          <h2>{product.Offers[0].OfferPrice[0].formattedPriceValue}</h2>
-          <p>{product.Offers[0].OfferPrice[0].priceQualifier}</p>
+        <div className="price-box">
+          <span className="price">{product.Offers[0].OfferPrice[0].formattedPriceValue}</span>
+          <span className="qualifier">{product.Offers[0].OfferPrice[0].priceQualifier}</span>
+        </div>
           <PromotionContainer promotions={product.Promotions} />
         <div className="quantity-box">
           <QuantityCounter />

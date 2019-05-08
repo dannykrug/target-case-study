@@ -1,0 +1,10 @@
+.promo-divider {
+  height: 1px;
+  width: 85%;
+  background: black;
+  margin: 3% 0%;
+}
+
+.promo-text {
+  color: red;
+}
