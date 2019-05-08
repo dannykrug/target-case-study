@@ -23,7 +23,7 @@ export default class ProductContainer extends Component {
           <div className="photo-carousel">
           <PhotoCarousel items={product.Images[0]}/>
           </div>
-          <div className="review-container">
+          <div className="desktop-review-container">
             <ReviewContainer reviews={product.CustomerReview[0]} />
           </div>
         </div>
@@ -54,6 +54,9 @@ export default class ProductContainer extends Component {
             </div>
             <h1>product highlights</h1>
             <HighlightsContainer highlights={product.ItemDescription[0].features}/>
+            </div>
+            <div className="mobile-review-container">
+              <ReviewContainer reviews={product.CustomerReview[0]} />
             </div>
       </div>
     )
