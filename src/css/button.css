@@ -1,19 +1,25 @@
-#atc {
-  width: 100px;
-  height: 40px;
-  background-color: red;
+.button {
+  width: 45%;
+  height: 75%;
   border-radius: 3px;
   text-align: center;
   color: white;
+  line-height: 90%;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 2px 2px 1px grey;
 }
 
-#pickup {
-  width: 100px;
-  height: 40px;
+.button:hover {
+  box-shadow: 2px 2px 1px lightBlue;
+}
+
+.atc {
+  background-color: red;
+}
+
+.pickup {
   background-color: black;
-  border-radius: 3px;
-  text-align: center;
-  color: white;
 }
 
 .add-share {
