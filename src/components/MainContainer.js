@@ -20,7 +20,6 @@ export default class MainContainer extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div>
         <ProductContainer product={this.state}/>

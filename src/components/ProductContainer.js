@@ -14,8 +14,6 @@ export default class ProductContainer extends Component {
     let product = this.props.product.product
     let buttonStyle = this.props.product
 
-    console.log(this.props.product.atc);
-
     return (
       <div className="main">
         <div className="left">

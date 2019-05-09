@@ -9,6 +9,10 @@
   color: #E80018;
 }
 
+/* .promo-text:hover {
+  cursor: pointer;
+} */
+
 @media only screen and (max-width: 768px) {
   .promo-divider {
     height: 1px;
