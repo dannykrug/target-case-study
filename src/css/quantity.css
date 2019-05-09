@@ -24,12 +24,12 @@
 .quantity-button {
   font-size: 25px;
   color: lightGrey;
+  transition: .3s;
 }
 
 .quantity-button:hover {
   cursor: pointer;
   color: #E80018;
-  transition: .4s;
 }
 
 .quantity-number {
