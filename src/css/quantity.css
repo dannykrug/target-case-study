@@ -29,6 +29,7 @@
 .quantity-button:hover {
   cursor: pointer;
   color: #E80018;
+  transition: .4s;
 }
 
 .quantity-number {
