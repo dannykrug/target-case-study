@@ -4,7 +4,7 @@ import '../css/promo.css'
 
  const PromotionContainer = (props) => {
 
-    let promotions = props.promotions.map(promotion => <Promotion promotion={promotion} />)
+    let promotions = props.promotions.map(promotion => <Promotion key={promotion.promotionIdentifier} promotion={promotion} />)
 
     return (
       <div>

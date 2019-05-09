@@ -7,10 +7,10 @@ import '../css/review.css'
     let review = props.review
     return(
       <div className={props.className}>
-      <p><StarRating name={review.overallRating} value={review.overallRating}/></p>
+      <StarRating name={review.overallRating} value={review.overallRating}/>
       <h3>{review.title}</h3>
       <p>{review.review}</p>
-      <p><span class="reviewer-name">{review.screenName}</span> <span><Moment format="MM/DD/YYYY">{review.datePosted}</Moment></span></p>
+      <p><span className="reviewer-name">{review.screenName}</span> <span><Moment format="MM/DD/YYYY">{review.datePosted}</Moment></span></p>
       </div>
     )
   }
