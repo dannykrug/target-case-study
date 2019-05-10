@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ItemData from '../ItemData'
-import ProductContainer from './ProductContainer'
+import ItemData from '../ItemData';
+import ProductContainer from './ProductContainer';
 
 export default class MainContainer extends Component {
 

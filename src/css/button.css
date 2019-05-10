@@ -34,6 +34,10 @@
   border-radius: 2px;
 }
 
+.add-share:hover {
+  cursor: pointer;
+}
+
 .hidden {
   display: none;
 }

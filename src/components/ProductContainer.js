@@ -36,8 +36,8 @@ export default class ProductContainer extends Component {
           </div>
 
           <div className="atc-box" id="buttonContainer">
-            <Button code={product.purchasingChannelCode} className={buttonStyle.pickup} id="pickup" name="PICK UP IN STORE" />
-            <Button code={product.purchasingChannelCode} className={buttonStyle.atc} id="atc" name="ADD TO CART" />
+            <Button message="Added to Cart for Pick Up" code={product.purchasingChannelCode} className={buttonStyle.pickup} id="pickup" name="PICK UP IN STORE" />
+            <Button message="Added to Cart" code={product.purchasingChannelCode} className={buttonStyle.atc} id="atc" name="ADD TO CART" />
           </div>
 
           <div className="return-box">
@@ -46,9 +46,9 @@ export default class ProductContainer extends Component {
             <p className="return-text">This item must be returned within {product.ReturnPolicy[0].ReturnPolicyDetails[0].policyDays} days. {product.ReturnPolicy[0].ReturnPolicyDetails[0].guestMessage}.</p>
           </div>
             <div className="add-share-box">
-              <Button className="add-share" id="registry" name="ADD TO REGISTRY" />
-              <Button className="add-share" id="list"  name="ADD TO LIST" />
-              <Button className="add-share" id="share" name="SHARE" />
+              <Button message="Added to Registry" className="add-share" id="registry" name="ADD TO REGISTRY" />
+              <Button message="Added to List" className="add-share" id="list"  name="ADD TO LIST" />
+              <Button message="Shared" className="add-share" id="share" name="SHARE" />
             </div>
             <h1>product highlights</h1>
             <HighlightsContainer highlights={product.ItemDescription[0].features}/>
